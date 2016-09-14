@@ -1,13 +1,13 @@
 <div class = "row">
   <div class="col-md-6">
     <h2>
-      {{ contact.firstName }} {{ contact.lastName }}
+      {{ contact.firstname }} {{ contact.lastname }}
     </h2>
   </div>
   <div class="col-md-3">
   </div>
   <div class="col-md-2">
-    <a href="#/"><button style="margin-top:20px" class="btn btn-default" ng-click="deleteContact(contact._id)">Delete</button></a>
+    <a href="#/"><button style="margin-top:20px" class="btn btn-default" ng-click="deleteContact(contact.id)">Delete</button></a>
   </div>
   <div class="col-md-1">
   </div>
@@ -15,10 +15,10 @@
 <div ng-hide="editMode" class="container">
   <div>
     <p ng-if="contact.email">email: <a ng-href="mailto:{{ contact.email }}" target="_blank">{{ contact.email }}</a></p>
-    <p ng-if="contact.phone.mobile">phone (m): {{ contact.phone.mobile }} </p>
-    <p ng-if="contact.phone.work">phone (w): {{ contact.phone.work }} </p>
-    <p ng-if="contact.address"> address: {{ contact.address }} </p>
-    <p ng-if="contact.twitter"> twitter: <a ng-href="https://twitter.com/{{ contact.twitter }}" target="_blank">@{{ contact.twitter }}</a></p>
+    <p ng-if="contact.mobilephone">phone (m): {{ contact.mobilephone }} </p>
+    <p ng-if="contact.phone">phone (w): {{ contact.phone }} </p>
+    <p ng-if="contact.mailingaddress.street"> address: {{ contact.mailingaddress.street }} </p>
+    <p ng-if="contact.twitter_handle__c"> twitter: <a ng-href="https://twitter.com/{{ contact.twitter_handle__c }}" target="_blank">@{{ contact.twitter_handle__c }}</a></p>
     <p>
       <button style="margin-top:20px" class="btn btn-default" ng-click="toggleEdit()">Edit</button>
       <a style="margin-top:20px" class="btn btn-default" href="#/">Back</a>

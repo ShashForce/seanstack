@@ -1,4 +1,4 @@
-<div class="row" ng-hide="contact._id">
+<div class="row" ng-hide="contact.id">
   <div class="col-md-6">
       <h2>Create new contact</h2>
   </div>
@@ -7,11 +7,11 @@
   <div>
     <p>
       <label>First Name (required)</label> 
-      <input id="name" class="form-control" type="text" ng-model="contact.firstName" required> 
+      <input id="name" class="form-control" type="text" ng-model="contact.firstname" required>
     </p>
     <p>
       <label>Last Name (required)</label> 
-      <input id="name" class="form-control" type="text" ng-model="contact.lastName" required> 
+      <input id="name" class="form-control" type="text" ng-model="contact.lastname" required>
     </p>
     <p>
       <label>Email (required)</label> 
@@ -19,19 +19,19 @@
     </p>
     <p>
       <label>Phone (Mobile)</label> 
-      <input id="name" class="form-control" type="text" ng-model="contact.phone.mobile"> 
+      <input id="name" class="form-control" type="text" ng-model="contact.mobilephone">
     </p>
     <p>
       <label>Phone (Work)</label> 
-      <input id="name" class="form-control" type="text" ng-model="contact.phone.work"> 
+      <input id="name" class="form-control" type="text" ng-model="contact.phone">
     </p>
     <p>
       <label>Address</label> 
-      <input id="name" class="form-control" type="text" ng-model="contact.address"> 
+      <input id="name" class="form-control" type="text" ng-model="contact.mailingstreet">
     </p>
     <p>
       <label>Twitter Handle</label> 
-      <input id="name" class="form-control" type="text" ng-model="contact.twitter"> 
+      <input id="name" class="form-control" type="text" ng-model="contact.twitter_handle__c">
     </p>
     <p>
       <button style="margin-top:20px" class="btn btn-default" ng-click="saveContact(contact)">Save</button>
