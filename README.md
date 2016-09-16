@@ -1,7 +1,7 @@
-# mean-contactlist
+# sean stack
 
-Contact List is a RESTful API server and web application built with the MEAN stack. It is a simple example that aims to concisely demonstrate basic MEAN and REST architecture. You can find the full tutorial here: https://devcenter.heroku.com/articles/mean-apps-restful-api.
+Based on the [Heroku MEAN stack example](https://github.com/chrisckchang/mean-contactlist)
 
-You can deploy a live copy of this application to Heroku with the button below.
+You can directly deploy this application to Heroku with the button below.
 
-[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy?template=https://github.com/chrisckchang/mean-contactlist)
+[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy?template=https://github.com/shashforce/seanstack)
