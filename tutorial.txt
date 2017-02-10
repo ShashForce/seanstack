@@ -10,7 +10,7 @@
 7. Open server.js, and replace the whole code with code from this server.js file: https://github.com/ShashForce/seanstack/blob/master/server.js
 8. Under the “//nforce setup” section, replace the clientID and clientSecret with the Consumer Key and Consumer Secret from the connected app that you previously created in Salesforce.
 9. Under the “//change username, password+securitytoken as per your org” section, replace the username and password with your Salesforce username and password+securitytoken. For example, if your password is “test1234” and security token is “WPGlG6shuetQopXoeFdqjh4y”, replace password with “test1234WPGlG6shuetQopXoeFdqjh4y”
-10. In case you miss anything or just want to cut to the end, the finished app repo is here: https://github.com/ShashForce/seanstack
+10. In case you miss anything or just want to cut to the end, the finished app repo is here: https://github.com/ShashForce/seanstack and you can dierctly watch it in action by clicking on the "Deploy to Heroku" button.
 
 From here, you can either run it locally or on Heroku.
 To run locally: you need to have node.js and npm installed and run “npm start” from command line.
