@@ -13,12 +13,11 @@
 10. In case you miss anything or just want to cut to the end, the finished app repo is here: https://github.com/ShashForce/seanstack
 
 From here, you can either run it locally or on Heroku.
-To run locally, you need to have node and npm installed and you can just do “npm start” from command line.
-
+To run locally: you need to have node.js and npm installed and run “npm start” from command line.
 To run on Heroku:
 1. Make sure you have git installed
 2. Sign up for a free Heroku account: https://signup.heroku.com
 3. Install the Heroku CLI on your machine: https://devcenter.heroku.com/articles/heroku-cli
-4. Run “heroku login” in command line
+4. Run “heroku login” in command line and provide your Heroku account credentials
 5. Switch to app directory and run “git push heroku master”
 6. Once done, run “heroku open”
