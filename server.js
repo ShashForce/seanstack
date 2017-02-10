@@ -7,10 +7,10 @@ var app = express();
 app.use(express.static(__dirname + "/public"));
 app.use(bodyParser.json());
 
-//nforce setup
+//nforce setup - change clientId, clientSecret, redirectUri(for not username/password flow) as per your org/app
 var org = nforce.createConnection({
-  clientId: "3MVG9KI2HHAq33Rx7qtquKI86S5qCrOX5dRV0zKpNmPi.XGCc4Rn3UHZUg4R7FjDEJDum1DHP4zvWvY2ziecT",
-  clientSecret: "6096928744949195798",
+  clientId: "3MVG9YDQS5WtC11pd5RLlQF.EWna.qSs2Q6ntHxtvWKCsUIfru8mXgnk2JYYg1_Fym9szqcyD5C91kmi87h9r",
+  clientSecret: "2968940936771568707",
   redirectUri: "https://seanstack.herokuapp.com/oauth/_callback",
   apiVersion: "v37.0",
   environment: "production",
@@ -36,8 +36,9 @@ function handleError(res, reason, message, code) {
  *    POST: creates a new contact
  */
 
+//change username, password+securitytoken as per your org
 app.get("/contacts", function(req, res) {
-  org.authenticate({ username: 'shashank@trailhead.com', password: 'y@h00mail2r3zd9RV7KJ5jF5QugAK7VE0w'}, function(err, oauth){
+  org.authenticate({ username: 'test@sean.org', password: 's3@nstackWPGlG6shuetQopXoeFdqjh4y'}, function(err, oauth){
     if(err) {
       console.log('Error: ' + err.message);
     } else {
