@@ -1,0 +1,24 @@
+1. Sign up for a free Developer Edition of Salesforce: https://developer.salesforce.com/signup
+2. Verify email and login to salesforce (https://login.salesforce.com if you are lost). Explore the Sales app and the Contacts tab.
+3. Create a connected app in Salesforce setup to connect with our app.
+   a. Setup | Create | Apps | Connected apps | New
+   b. Give connected app name, your email, enable OAuth settings, give a dummy callback URL, Select “Full Access” as scope and save.
+   c. Note the Consumer Key and Consumer Secret
+4. Go to Your Name | My Settings | Personal | Reset My Security Token, and click “Reset Security Token”. You will get an email with your security token, keep it handy.
+5. Clone the app source code locally from https://github.com/chrisckchang/mean-contactlist
+6. Explore the app directory using a text editor like sublime
+7. Open server.js, and replace the whole code with code from this server.js file: https://github.com/ShashForce/seanstack/blob/master/server.js
+8. Under the “//nforce setup” section, replace the clientID and clientSecret with the Consumer Key and Consumer Secret from the connected app that you previously created in Salesforce.
+9. Under the “//change username, password+securitytoken as per your org” section, replace the username and password with your Salesforce username and password+securitytoken. For example, if your password is “test1234” and security token is “WPGlG6shuetQopXoeFdqjh4y”, replace password with “test1234WPGlG6shuetQopXoeFdqjh4y”
+10. In case you miss anything or just want to cut to the end, the finished app repo is here: https://github.com/ShashForce/seanstack
+
+From here, you can either run it locally or on Heroku.
+To run locally, you need to have node and npm installed and you can just do “npm start” from command line.
+
+To run on Heroku:
+1. Make sure you have git installed
+2. Sign up for a free Heroku account: https://signup.heroku.com
+3. Install the Heroku CLI on your machine: https://devcenter.heroku.com/articles/heroku-cli
+4. Run “heroku login” in command line
+5. Switch to app directory and run “git push heroku master”
+6. Once done, run “heroku open”
